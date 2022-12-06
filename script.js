@@ -11,6 +11,7 @@ const createTask = (evento) => {
     const task = document.createElement('li');
     task.classList.add('card');
     input.value = ""    
+    
     const taskContent= document.createElement("div");
     taskContent.appendChild(checkComplete())
     const titleTask= document.createElement("span");
