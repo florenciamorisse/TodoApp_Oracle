@@ -5,7 +5,7 @@ const deleteIcon = ()=>{
     return i ;
 }
 const deleteTask=(event)=>{
-    const parent = event.target.parentElement.parentNode;
+    const parent = event.target.parentElement;
     parent.remove();    
 }
 export default deleteIcon;

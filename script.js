@@ -11,15 +11,17 @@ const createTask = (evento) => {
     const task = document.createElement('li');
     task.classList.add('card');
     input.value = ""    
+    
     const taskContent= document.createElement("div");
     taskContent.appendChild(checkComplete())
     const titleTask= document.createElement("span");
     titleTask.classList.add("task");
     titleTask.innerText= value;
     taskContent.appendChild(titleTask); 
-    taskContent.appendChild (deleteIcon());
+    
     //task.innerHTML = content
     task.appendChild(taskContent)
+    task.appendChild (deleteIcon());
     list.appendChild(task);
 }
 btn.addEventListener("click", createTask);
