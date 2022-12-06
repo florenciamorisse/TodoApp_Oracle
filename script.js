@@ -18,9 +18,10 @@ const createTask = (evento) => {
     titleTask.classList.add("task");
     titleTask.innerText= value;
     taskContent.appendChild(titleTask); 
-    taskContent.appendChild (deleteIcon());
+    
     //task.innerHTML = content
     task.appendChild(taskContent)
+    task.appendChild (deleteIcon());
     list.appendChild(task);
 }
 btn.addEventListener("click", createTask);
